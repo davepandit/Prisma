@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(cookieParser());
 
-app.use("/", userRouter);
+app.use("/api", userRouter);
 
 app.get("/", (req, res) => {
   res.send("Hi there its fine and good");
